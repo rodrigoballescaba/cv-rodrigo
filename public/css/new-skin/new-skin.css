@@ -732,7 +732,7 @@ input[type="file"] {
 }
 
 .card-started .profile.no-photo .title {
-	margin-top: 240px;
+	margin-top: 260px;
 }
 
 .card-started .profile .slide {
@@ -853,7 +853,7 @@ input[type="file"] {
 		height: 55%;
 	}
 	.card-started .profile.no-photo .title {
-		margin-top: 200px;
+		margin-top: 220px;
 	}
 }
 
@@ -1112,7 +1112,7 @@ input[type="file"] {
 /* Pricing */
 .pricing-items .pricing-item {
 	position: relative;
-	padding: 0 0 100px 0;
+	padding: 0 0 0 0;
 }
 
 .pricing-items .pricing-item .name {
