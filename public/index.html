@@ -1,1173 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-	<!-- update the version number as needed -->
-	<script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
-	<!-- include only the Firebase features as you need -->
-	<script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
-	<script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
-	<!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-	<script defer src="/__/firebase/init.js?useEmulator=true"></script>
-	<!--
-		Basic
-	-->
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Curriculum Vitae - Rodrigo Ballesteros Cabañas</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="Curriculum Vitae - Rodrigo Ballesteros Cabañas" />
-	<meta name="keywords"
-		content="vcard, resposnive, resume, personal, card, cv, cards, portfolio, curriculum, rodrigo," />
-	<meta name="author" content="Rodrigo Ballesteros Cabañas" />
-	<!--
-		Load Fonts
-	-->
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-		rel="stylesheet">
-	<!--
-		Load CSS
-	-->
-	<link rel="stylesheet" href="css/basic.css" />
-	<link rel="stylesheet" href="css/layout.css" />
-	<link rel="stylesheet" href="css/blogs.css" />
-	<link rel="stylesheet" href="css/ionicons.css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" />
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css" />
-	<!--
-		Background Gradient
-	-->
-	<link rel="stylesheet" href="css/gradient.css" />
-	<!--
-		Template New-Skin
-	-->
-	<link rel="stylesheet" href="css/new-skin/new-skin.css" />
-	<!--
-		Template RTL
-	-->
-	<!--<link rel="stylesheet" href="css/rtl-new.css" />-->
-	<!--
-		Template Colors
-	-->
-	<link rel="stylesheet" href="css/colors.css" />
-	<!--<link rel="stylesheet" href="css/template-colors/blue.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
-
-	<!--
-		Template Dark
-	-->
-	<!--<link rel="stylesheet" href="css/template-dark/dark.css" />-->
-
-
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!--
-		Favicons
-	-->
-	<link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Ballesteros · Tech Lead Flutter e IA</title>
+<meta name="description" content="Tech Lead con 9 años de experiencia en Flutter, React y Google Cloud. Llevo IA generativa a producto real: agentes, asistentes y LLMs en producción.">
+<link rel="canonical" href="https://rodrigoballescaba.app/">
+<link rel="alternate" hreflang="es" href="https://rodrigoballescaba.app/">
+<link rel="alternate" hreflang="en" href="https://rodrigoballescaba.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://rodrigoballescaba.app/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rodrigo Ballesteros · Tech Lead Flutter e IA">
+<meta property="og:description" content="Tech Lead con 9 años de experiencia en Flutter, React y Google Cloud. Llevo IA generativa a producto real: agentes, asistentes y LLMs en producción.">
+<meta property="og:url" content="https://rodrigoballescaba.app/">
+<meta property="og:image" content="https://rodrigoballescaba.app/img/og.jpg">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b56c8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Rodrigo Ballesteros Cabañas", "jobTitle": "Tech Lead", "url": "https://rodrigoballescaba.app/", "image": "https://rodrigoballescaba.app/img/rodrigo.jpg", "email": "mailto:rodrigoballescaba@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Utiel", "addressRegion": "Valencia", "addressCountry": "ES"}, "sameAs": ["https://www.linkedin.com/in/rodrigo-ballesteros-caba%C3%B1as-163853165/", "https://github.com/rodrigoballescaba"], "knowsAbout": ["Flutter", "Generative AI", "LLM agents", "React", "Next.js", "Firebase", "Google Cloud", "Python"], "alumniOf": "Universitat Politècnica de València"}</script>
 </head>
-
 <body>
-	<div class="page new-skin">
-
-		<!-- preloader -->
-		<div class="preloader">
-			<div class="centrize full-width">
-				<div class="vertical-center">
-					<div class="spinner">
-						<div class="double-bounce1"></div>
-						<div class="double-bounce2"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- background -->
-		<div class="background gradient">
-			<ul class="bg-bubbles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-
-		<!--
-			Container
-		-->
-		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
-
-			<!--
-				Header
-			-->
-			<header class="header">
-
-				<!-- header profile -->
-				<div class="profile">
-					<div class="title"><a href="mailto: rodrigoballescaba@gmail.com"
-							style="color: black;">rodrigoballescaba@gmail.com</a></div>
-					<div class="subtitle subtitle-typed">
-						<div class="typing-title">
-							<p><strong>Flutter</strong></p>
-							<p><strong>Amazon Web Services</strong></p>
-							<p><strong>Firebase</strong></p>
-							<p><strong>Microsoft Azure</strong></p>
-							<p><strong>PlayStore</strong></p>
-							<p><strong>AppStore</strong></p>
-							<p><strong>Angular</strong></p>
-							<p><strong>React</strong></p>
-							<p><strong>Java</strong></p>
-							<p><strong>Kotlin</strong></p>
-							<p><strong>Swift</strong></p>
-							<p><strong>Objective-C</strong></p>
-							<p><strong>WordPress</strong></p>
-							<p><strong>HTML</strong></p>
-							<p><strong>CSS</strong></p>
-							<p><strong>JavaScript</strong></p>
-							<p><strong>SQL</strong></p>
-							<p><strong>NOSQL</strong></p>
-							<p><strong>JSON</strong></p>
-						</div>
-					</div>
-				</div>
-
-				<!-- menu btn -->
-				<!--<a href="#" class="menu-btn"><span></span></a>-->
-
-				<!-- menu -->
-				<div class="top-menu">
-					<ul>
-						<li class="active">
-							<a href="#about-card">
-								<span class="icon ion-person"></span>
-								<span class="link">Sobre Mí</span>
-							</a>
-						</li>
-						<li>
-							<a href="#resume-card">
-								<span class="icon ion-android-list"></span>
-								<span class="link">Resumen</span>
-							</a>
-						</li>
-						<li>
-							<a href="#works-card">
-								<span class="icon ion-paintbrush"></span>
-								<span class="link">Trabajos</span>
-							</a>
-						</li>
-						<li>
-							<a href="#contacts-card">
-								<span class="icon ion-at"></span>
-								<span class="link">Contacto</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-			</header>
-
-			<!--
-				Card - Started
-			-->
-			<div class="card-started" id="home-card">
-
-				<!--
-					Profile
-				-->
-				<div class="profile no-photo">
-
-					<!-- profile image -->
-					<div class="slide" style="background-image: url(images/rodrigo.jpg);"></div>
-
-					<!-- profile titles -->
-					<div class="title" style="line-height: 100%;">Rodrigo Ballesteros</div>
-					<div class="subtitle subtitle-typed">
-						<div class="typing-title">
-							<p><strong>Tech Leader Flutter</strong></p>
-							<p><strong>Chief Technology Officer Startup</strong></p>
-							<p><strong>Senior Frontend Developer</strong></p>
-							<p><strong>FullStack Developer</strong></p>
-							<p><strong>Freelancer</strong></p>
-						</div>
-					</div>
-
-					<!-- profile socials -->
-					<div class="social">
-						<a target="_blank"
-							href="https://www.linkedin.com/in/rodrigo-ballesteros-caba%C3%B1as-163853165/"><span
-								class="fa fa-linkedin"></span></a>
-						<a target="_blank" href="https://github.com/rodrigoballescaba"><span
-								class="fa fa-github"></span></a>
-					</div>
-
-					<!-- profile buttons -->
-					<div class="lnks">
-						<a href="images/CV-Rodrigo.pdf" target="_blank" class="lnk">
-							<span class="text">Descargar CV</span>
-							<span class="ion ion-archive"></span>
-						</a>
-						<a href="#" class="lnk discover">
-							<span class="text">Contactar</span>
-							<span class="arrow"></span>
-						</a>
-					</div>
-
-				</div>
-
-			</div>
-
-			<!--
-				Card - About
-			-->
-			<div class="card-inner animated active" id="about-card">
-				<div class="card-wrap">
-
-					<!--
-						About
-					-->
-					<div class="content about">
-
-						<!-- title -->
-						<div class="title">Sobre Mí</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="text-box">
-									<p>
-										Me llamo Rodrigo Ballesteros Cabañas y soy Software Developer en Valencia.
-										Tengo 6 años de experiencia desarrollando apps nativas y multiplataforma
-										en diferentes entornos de programación y con distintas arquitecturas.
-									</p>
-								</div>
-							</div>
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="info-list">
-									<ul>
-										<li><strong>Edad:</strong>28</li>
-										<li><strong>Sexo:</strong>Masculino</li>
-										<li><strong>Nacionalidad:</strong>Español</li>
-										<li><strong>Domicilio:</strong>Utiel, Valencia (España)</li>
-										<li><strong>Teléfono:</strong>+34 695 361 678</li>
-									</ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Services
-					-->
-					<div class="content services">
-
-						<!-- title -->
-						<div class="title">Mis Servicios</div>
-
-						<!-- content -->
-						<div class="row service-items border-line-v">
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-code"></span>
-									</div>
-									<div class="name">
-										<span>
-											Flutter App
-										</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Desarrollo completo de app multiplataforma (Android/IOS) en Flutter.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-code"></span>
-									</div>
-									<div class="name">
-										<span>
-											React/Angular Web
-										</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Desarrollo completo de web responsive en React o Angular.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-wordpress"></span>
-									</div>
-									<div class="name">
-										<span>
-											WordPress
-										</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Desarrollo completo de web responsive en WordPress.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-university"></span>
-									</div>
-									<div class="name">
-										<span>
-											AppStore y PlayStore
-										</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Subida de app, gestión de los certificados y configuración completa de la
-												tienda de Apple y Google.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-circle-o-notch"></span>
-									</div>
-									<div class="name">
-										<span>
-											CI/CD
-										</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Implementación de integración continua y entrega continua (CI/CD)
-												mediante Fastlane para automatizar pruebas, compilación y despliegue de
-												aplicaciones de manera eficiente.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-list"></span>
-									</div>
-									<div class="name">
-										<span>
-											Marketing
-										</span>
-									</div>
-									<div class="desc">
-										<div>
-											<p>Análisis y configuración de las herramientas más utilizadas hoy en día
-												para el marketing digital, Google y Facebook.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="clear"></div>
-
-					</div>
-
-					<!--
-						Price Tables
-					-->
-					<div class="content pricing">
-
-						<!-- title -->
-						<div class="title">Precios</div>
-
-						<!-- content -->
-						<div class="row pricing-items">
-
-							<!-- pricing item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="pricing-item">
-									<div class="icon"><i class="fa fa-battery-half"></i></div>
-									<div class="name">Básico</div>
-									<div class="amount">
-										<span class="dollar">€</span>
-										<span class="number">50</span>
-										<span class="period">hora</span>
-									</div>
-									<div class="feature-list">
-										<ul>
-											<li>Flutter App</li>
-											<li>React/Angular Web</li>
-											<li>WordPress</li>
-											<li class="disable">AppStore</li>
-											<li class="disable">PlayStore</li>
-											<li class="disable">Marketing <strong>nuevo</strong></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<!-- pricing item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="pricing-item">
-									<div class="icon"><i class="fa fa-battery-full"></i></div>
-									<div class="name">Pro</div>
-									<div class="amount">
-										<span class="dollar">€</span>
-										<span class="number">80</span>
-										<span class="period">hora</span>
-									</div>
-									<div class="feature-list">
-										<ul>
-											<li>Flutter App</li>
-											<li>React/Angular Web</li>
-											<li>WordPress</li>
-											<li>AppStore</li>
-											<li>PlayStore</li>
-											<li>Google Admob</li>
-											<li>Google Analytics</li>
-											<li>Google Tag Manager</li>
-											<li>Facebook Analytics<strong>nuevo</strong></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Fun Fact
-					-->
-					<div class="content fuct">
-
-						<!-- title -->
-						<div class="title">Datos Curiosos</div>
-
-						<!-- content -->
-						<div class="row fuct-items">
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-code"></span></div>
-									<div class="name">30 Aplicaciones Desarrolladas</div>
-								</div>
-							</div>
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-university"></span></div>
-									<div class="name">Grado y 2 Másters</div>
-								</div>
-							</div>
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-github"></span></div>
-									<div class="name">Autoaprendizaje rápido</div>
-								</div>
-							</div>
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-flag"></span></div>
-									<div class="name">Trabajo en remoto</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Clients
-					-->
-					<div class="content clients">
-
-						<!-- title -->
-						<div class="title">Clientes</div>
-
-						<!-- content -->
-						<div class="row client-items">
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank"
-											href="https://mobilendo.com/portfolio/museo-la-fabrica-del-sol">
-											<img src="images/clients/fabrica.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://mobilendo.com/portfolio/bnp-paribas">
-											<img src="images/clients/bnp.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank"
-											href="https://mobilendo.com/portfolio/hoomvip-cerraduras-electronicas">
-											<img src="images/clients/hoomvip.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://epigram.tech/proyectos/molo">
-											<img src="images/clients/molo.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://epigram.tech/proyectos/allfunds">
-											<img src="images/clients/allfunds.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://pinecasterbook.com">
-											<img src="images/clients/gibson.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://darkantechnologies.com">
-											<img src="images/clients/darkan.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank"
-											href="https://www.druni.es/app">
-											<img src="images/clients/druni.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank"
-											href="https://apps.apple.com/es/app/zummo-cloud/id6444164141">
-											<img src="images/clients/zummo.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank"
-											href="https://play.google.com/store/apps/details?id=com.cuatroochenta.subusalicante&hl=es&gl=US">
-											<img src="images/clients/subus.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!-- Quote -->
-					<div class="content quote">
-
-						<!-- title -->
-						<div class="title">
-							<span>Cita</span>
-						</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="revs-item">
-									<div class="text">
-										<div>
-											El éxito es la suma de pequeños esfuerzos repetidos día tras día.
-										</div>
-									</div>
-									<div class="user">
-										<div class="img">
-											<img src="images/rodrigo.jpg" alt="Rodrigo Ballesteros" />
-										</div>
-										<div class="info">
-											<div class="name">Rodrigo Ballesteros</div>
-											<div class="company">Tech Leader Flutter</div>
-										</div>
-										<div class="clear"></div>
-									</div>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Resume
-			-->
-			<div class="card-inner" id="resume-card">
-				<div class="card-wrap">
-					<!--
-						Resume
-					-->
-					<div class="content resume">
-
-						<!-- title -->
-						<div class="title">Resumen</div>
-
-						<!-- content -->
-						<div class="row">
-
-							<!-- experience -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="resume-title border-line-h">
-									<div class="icon"><i class="fa fa-briefcase"></i></div>
-									<div class="name">Experiencia</div>
-								</div>
-								<div class="resume-items">
-									<div class="resume-item border-line-h active">
-										<div class="date">2023 - Actualmente</div>
-										<div class="name">Tech Leader Flutter</div>
-										<div class="company">Cuatroochenta</div>
-										<p>
-											Flutter - Team Leader - Android - iOS - AppStore - PlayStore - CI/CD 
-										</p>
-									</div>
-									<div class="resume-item border-line-h">
-										<div class="date">2021 - 2023</div>
-										<div class="name">CTO</div>
-										<div class="company">Darkan Technologies</div>
-										<p>
-											AWS - Flutter - Android - iOS - AppStore - PlayStore - Google/Facebook
-											Marketing - WordPress - Wix - Firebase
-										</p>
-									</div>
-									<div class="resume-item border-line-h">
-										<div class="date">2019 - 2021</div>
-										<div class="name">Senior Frontend Developer</div>
-										<div class="company">Epigram</div>
-										<p>
-											Flutter - Flutter Plugins - iOS
-										</p>
-									</div>
-									<div class="resume-item">
-										<div class="date">2017 - 2019</div>
-										<div class="name">Junior Frontend Developer</div>
-										<div class="company">Mobilendo</div>
-										<p>
-											AWS - Virtual Reality - Ionic - Ionic Plugins - Unity - iOS
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<!-- education -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="resume-title border-line-h">
-									<div class="icon"><i class="fa fa-university"></i></div>
-									<div class="name">Educación</div>
-								</div>
-								<div class="resume-items">
-									<div class="resume-item border-line-h">
-										<div class="date">2017 - 2018</div>
-										<div class="name">Master en Desarrollo de Aplicaciones Android</div>
-										<div class="company">Valencia</div>
-										<p>
-											Especialización en Android
-										</p>
-									</div>
-									<div class="resume-item border-line-h">
-										<div class="date">2016 - 2017</div>
-										<div class="name">Master en Desarrollo de Aplicaciones Multiplataforma</div>
-										<div class="company">Valencia</div>
-										<p>
-											iOS - Android - Swift - Unity - SmartThings
-										</p>
-									</div>
-									<div class="resume-item">
-										<div class="date">2012 - 2016</div>
-										<div class="name">Grado en Ingeniería Informática</div>
-										<div class="company">Valencia</div>
-										<p>
-											Java - JavaScript - Haskell - Prolog - MatLab - Python - NodeJs
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Skills
-					-->
-					<div class="content skills">
-
-						<!-- title -->
-						<div class="title">Mis Habilidades</div>
-
-						<!-- content -->
-						<div class="row">
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="fa fa-paint-brush"></i></div>
-										<div class="name">Diseño</div>
-									</div>
-									<ul>
-										<li class="border-line-h">
-											<div class="name">Diseño App y Web</div>
-											<div class="progress">
-												<div class="percentage" style="width:90%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">InVision</div>
-											<div class="progress">
-												<div class="percentage" style="width:80%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Figma</div>
-											<div class="progress">
-												<div class="percentage" style="width:80%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Diseño Gráfico</div>
-											<div class="progress">
-												<div class="percentage" style="width:60%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list dotted">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="fa fa-flag"></i></div>
-										<div class="name">Idiomas</div>
-									</div>
-									<ul>
-										<li class="border-line-h">
-											<div class="name">Español</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Inglés</div>
-											<div class="progress ">
-												<div class="percentage" style="width:70%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list circles">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="fa fa-code"></i></div>
-										<div class="name">Código</div>
-									</div>
-									<ul>
-										<li>
-											<div class="name">Flutter</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">AWS/Firebase</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">React/Angular</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">NodeJS/HTML/CSS</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">WordPress/Wix</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">C#</div>
-											<div class="progress p95">
-												<span>90%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">Swift/Objective-C</div>
-											<div class="progress p80">
-												<span>80%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">Java/Kotlin</div>
-											<div class="progress p95">
-												<span>90%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">Unity</div>
-											<div class="progress p80">
-												<span>80%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">Python</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">SQL/NOSQL</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-										<li>
-											<div class="name">CI/CD</div>
-											<div class="progress p100">
-												<span>100%</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="fa fa-list"></i></div>
-										<div class="name">Conocimientos</div>
-									</div>
-									<ul>
-										<li>
-											<div class="name">Desarrollo de web a medida</div>
-										</li>
-										<li>
-											<div class="name">Desarrollo de app multiplataforma a medida</div>
-										</li>
-										<li>
-											<div class="name">Desarrollo de plugins en Flutter a medida</div>
-										</li>
-										<li>
-											<div class="name">Asesoramiento de diseño</div>
-										</li>
-										<li>
-											<div class="name">Asesoramiento de marketing</div>
-										</li>
-										<li>
-											<div class="name">Subida y configuración de las stores (AppStore-PlayStore)
-											</div>
-										</li>
-										<li>
-											<div class="name">Gestión de certificados iOS (Xcode)</div>
-										</li>
-										<li>
-											<div class="name">Gestión de proyectos</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<!--
-				Card - Works
-			-->
-			<div class="card-inner" id="works-card">
-				<div class="card-wrap">
-					<!--
-						Works
-					-->
-					<div class="content works">
-
-						<!-- title -->
-						<div class="title">Trabajos recientes</div>
-
-						<!-- content -->
-						<div class="row grid-items border-line-v">
-
-							<!-- work item photo -->
-							<div class="col col-d-12 col-t-12 col-m-12 grid-item photo border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="images/works/druni.png" class="has-popup-image">
-											<img src="images/works/druni.png" alt="Druni" />
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a class="name">Druni</a>
-										<a href="https://apps.apple.com/es/app/perfumerias-druni/id1592321069" target="_blank"
-											class="category">AppStore</a>
-										<a class="category">-</a>
-										<a href="https://play.google.com/store/apps/details?id=es.druni.druni_app"
-											target="_blank" class="category">Android</a>
-									</div>
-								</div>
-								<br>
-								<div class="box-item">
-									<div class="image">
-										<a href="images/works/zummo.png" class="has-popup-image">
-											<img src="images/works/zummo.png" alt="Zummo" />
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a class="name">Zummo Cloud</a>
-										<a href="https://apps.apple.com/es/app/zummo-cloud/id6444164141" target="_blank"
-											class="category">AppStore</a>
-										<a class="category">-</a>
-										<a href="https://play.google.com/store/apps/details?id=com.zummo.zummocloud"
-											target="_blank" class="category">Android</a>
-									</div>
-								</div>
-								<br>
-								<div class="box-item">
-									<div class="image">
-										<a href="images/works/subus.png" class="has-popup-image">
-											<img src="images/works/subus.png" alt="Alicante Bus" />
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a class="name">Alicante Bus</a>
-										<a href="https://apps.apple.com/es/app/alicante-bus/id1040157627" target="_blank"
-											class="category">AppStore</a>
-										<a class="category">-</a>
-										<a href="https://play.google.com/store/apps/details?id=com.cuatroochenta.subusalicante"
-											target="_blank" class="category">Android</a>
-									</div>
-								</div>
-								<br>
-								<div class="box-item">
-									<div class="image">
-										<a href="images/works/hibeats.png" class="has-popup-image">
-											<img src="images/works/hibeats.png" alt="HiBeats" />
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a class="name">HiBeats</a>
-										<a href="https://apps.apple.com/es/app/hibeats/id1563711761" target="_blank"
-											class="category">AppStore</a>
-										<a class="category">-</a>
-										<a href="https://play.google.com/store/apps/details?id=com.darkan.hibeats.app"
-											target="_blank" class="category">Android</a>
-									</div>
-								</div>
-								<br>
-								<div class="box-item">
-									<div class="image">
-										<a href="images/works/nova.png" class="has-popup-image">
-											<img src="images/works/nova.png" alt="Nova Connect" />
-											<span class="info">
-												<span class="ion ion-image"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a class="name">Novaconnect</a>
-										<a href="https://apps.apple.com/es/app/novaconnect/id1614666977" target="_blank"
-											class="category">AppStore</a>
-										<a class="category">-</a>
-										<a href="https://play.google.com/store/apps/details?id=com.darkan.nova.app"
-											target="_blank" class="category">Android</a>
-									</div>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Contacts
-			-->
-			<div class="card-inner contacts" id="contacts-card">
-				<div class="card-wrap">
-					<!--
-						Conacts Info
-					-->
-					<div class="content contacts">
-
-						<!-- title -->
-						<div class="title">Ponerse en Contacto</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="info-list">
-									<ul>
-										<li><strong>Dirección:</strong><a style="color:black; font-size:14px;">Utiel,
-												Valencia (España)</a></li>
-										<li><strong>Emai:</strong><a href="mailto:rodrigoballescaba@gmail.com"
-												style="color:black; font-size:14px;">rodrigoballescaba@gmail.com</a>
-										</li>
-										<li><strong>Teléfono:</strong><a href="tel:34 695 361 678"
-												style="color:black; font-size:14px;">+34 695 361 678</a></li>
-										<li><strong>Linkedin:</strong><a
-												href="https://www.linkedin.com/in/rodrigo-ballesteros-caba%C3%B1as-163853165/"
-												style="color:black; font-size:14px;"><span
-													class="fa fa-linkedin"></span></a></li>
-										<li><strong>Freelance:</strong><a style="color:black; font-size:14px;">No
-												Disponible</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--
-		jQuery Scripts
-	-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.validate.js"></script>
-	<script src="js/jquery.magnific-popup.js"></script>
-	<script src="js/imagesloaded.pkgd.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/jquery.slimscroll.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
-
-	<!--
-		Main Scripts
-	-->
-	<script src="js/scripts.js"></script>
-
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">Rodrigo Ballesteros</a>
+    <nav class="nav" aria-label="Secciones"><a href="#ia">IA</a><a href="#proyectos">Proyectos</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a></nav>
+    <div class="top-actions">
+      <a class="lang" href="en/" hreflang="en" title="Read in English">EN</a>
+      <a class="btn btn-ghost btn-sm" href="cv/rodrigo-ballesteros-cv.pdf" download>CV en PDF</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="who">
+          <img src="img/rodrigo.jpg" alt="Rodrigo Ballesteros Cabañas" width="56" height="56">
+          <div><strong>Rodrigo Ballesteros Cabañas</strong><span>Tech Lead en Flutter e IA aplicada, Valencia</span></div>
+        </div>
+        <h1>Apps en Flutter y producto con IA que llegan a producción.</h1>
+        <p class="lead">Llevo 9 años construyendo apps móviles y web, con más de 30 publicadas en App Store y Google Play. Hoy me centro en meter agentes y LLMs en productos reales, desde la arquitectura en Google Cloud y Firebase hasta la tienda.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:rodrigoballescaba@gmail.com">Escríbeme</a>
+          <a class="btn btn-ghost" href="cv/rodrigo-ballesteros-cv.pdf" download>Descargar CV</a>
+        </div>
+        <p class="availability">Disponible para proyectos freelance y puestos de Tech Lead.</p>
+      </div>
+      <figure style="margin:0">
+        <div class="phone">
+          <div class="phone-bar"><span class="dot">R</span><div><b>Renacia Clinic&#x27;s</b><small>Asistente con IA</small></div></div>
+          <ul class="chat" aria-label="Conversación de ejemplo con el asistente de WhatsApp que he construido para una clínica: el agente consulta la agenda y reserva en Google Calendar."><li class="msg user">Hola, ¿tenéis hueco el jueves por la tarde para la consulta de valoración?</li><li class="msg tool">get_available_slots</li><li class="msg bot">¡Hola! El jueves por la tarde tengo libre a las 17:00 y a las 18:30. ¿Cuál te viene mejor?</li><li class="msg user">A las 18:30, porfa</li><li class="msg tool">book_appointment</li><li class="msg bot">Hecho, te he reservado el jueves a las 18:30. ¿Me dices tu nombre para la ficha?</li><li class="msg typing" aria-hidden="true"><i></i><i></i><i></i></li></ul>
+        </div>
+        <figcaption class="phone-caption">Conversación de ejemplo con el asistente de WhatsApp que he construido para una clínica: el agente consulta la agenda y reserva en Google Calendar. <button class="replay" type="button">Ver otra vez</button></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="ia">
+    <div class="wrap">
+      <h2>IA aplicada</h2>
+      <p class="intro">Uso la IA en dos frentes: dentro del producto, para que haga trabajo real, y en cómo lo construyo.</p>
+      <div class="ai-grid"><div class="ai-col primary"><h3>En el producto</h3><ul><li><b>Agentes con tool calling</b><span>que consultan y actúan sobre sistemas reales: agenda, CRM, pagos.</span></li><li><b>Asistentes conversacionales</b><span>en WhatsApp, con traspaso a una persona cuando hace falta.</span></li><li><b>Varios proveedores de LLM</b><span>Claude, GPT, Gemini o DeepSeek, intercambiables sin tocar el código.</span></li><li><b>RAG y salidas estructuradas</b><span>embeddings, búsqueda semántica y respuestas validadas con Zod.</span></li><li><b>Prompts y evaluación</b><span>diseño de prompts y pruebas de calidad de las respuestas.</span></li></ul></div><div class="ai-col"><h3>En el desarrollo</h3><ul><li><b>Claude Code, Cursor y Copilot</b><span>en el día a día, con criterio para revisar lo que generan.</span></li><li><b>Agentes y MCP</b><span>para automatizar tareas repetitivas del equipo.</span></li><li><b>Python</b><span>para scripts, datos y automatizaciones.</span></li><li><b>Equipos que usan IA</b><span>flujos y buenas prácticas para que el equipo gane velocidad sin perder calidad.</span></li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="proyectos">
+    <div class="wrap">
+      <h2>Proyectos</h2>
+      <p class="intro">Lo último que he construido, y algunas de las apps que he publicado en las tiendas.</p>
+      <article class="feature">
+        <div>
+          <p class="kicker">Proyecto freelance, 2026</p>
+          <h3>Renacia Clinic&#x27;s</h3>
+          <p>Web, asistente de WhatsApp con IA y panel de gestión para una clínica de micropigmentación capilar. Todo en producción y mantenido por mí.</p>
+          <ul class="tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Firebase</li><li>Google Cloud</li><li>Vercel AI SDK</li><li>Claude</li><li>WhatsApp Cloud API</li></ul>
+          <a class="btn btn-ghost btn-sm" href="https://renacia-clinic-s.web.app" target="_blank" rel="noopener">Ver la web</a>
+        </div>
+        <ul><li>El asistente responde por WhatsApp, consulta huecos y reserva la cita en Google Calendar.</li><li>El proveedor de IA se elige por configuración: Claude hoy, otro modelo mañana si sale más barato.</li><li>Panel para la clínica con fichas de clientes, retoques, gastos, objetivos y KPIs.</li><li>Web pública rápida, con blog y SEO, en Firebase Hosting.</li></ul>
+      </article>
+      <h3 class="apps-title">Apps publicadas</h3>
+      <ul class="apps"><li class="app"><img src="img/druni.png" alt="" width="56" height="56" loading="lazy"><b>Druni</b><a href="https://apps.apple.com/es/app/perfumerias-druni/id1592321069" target="_blank" rel="noopener">App Store</a> <a href="https://play.google.com/store/apps/details?id=es.druni.druni_app" target="_blank" rel="noopener">Google Play</a></li><li class="app"><img src="img/zummo-cloud.png" alt="" width="56" height="56" loading="lazy"><b>Zummo Cloud</b><a href="https://apps.apple.com/es/app/zummo-cloud/id6444164141" target="_blank" rel="noopener">App Store</a> <a href="https://play.google.com/store/apps/details?id=com.zummo.zummocloud" target="_blank" rel="noopener">Google Play</a></li><li class="app"><img src="img/alicante-bus.png" alt="" width="56" height="56" loading="lazy"><b>Alicante Bus</b><a href="https://apps.apple.com/es/app/alicante-bus/id1040157627" target="_blank" rel="noopener">App Store</a> <a href="https://play.google.com/store/apps/details?id=com.cuatroochenta.subusalicante" target="_blank" rel="noopener">Google Play</a></li><li class="app"><img src="img/hibeats.png" alt="" width="56" height="56" loading="lazy"><b>HiBeats</b><a href="https://apps.apple.com/es/app/hibeats/id1563711761" target="_blank" rel="noopener">App Store</a> <a href="https://play.google.com/store/apps/details?id=com.darkan.hibeats.app" target="_blank" rel="noopener">Google Play</a></li><li class="app"><img src="img/novaconnect.png" alt="" width="56" height="56" loading="lazy"><b>Novaconnect</b><a href="https://apps.apple.com/es/app/novaconnect/id1614666977" target="_blank" rel="noopener">App Store</a> <a href="https://play.google.com/store/apps/details?id=com.darkan.nova.app" target="_blank" rel="noopener">Google Play</a></li></ul>
+      <p class="clients"><b>También he trabajado para:</b> Allfunds, BNP Paribas, Druni, Zummo, Gibson, Hoomvip, Molo, La Fàbrica del Sol y el bus urbano de Alicante.</p>
+    </div>
+  </section>
+
+  <section class="block" id="experiencia">
+    <div class="wrap">
+      <h2>Experiencia</h2>
+      <ol class="timeline" reversed><li class="now"><div class="job-head"><h3>Desarrollador freelance, producto e IA</h3><span class="job-when">2026 – actualidad</span></div><p class="job-org">Renacia Clinic&#x27;s</p><ul><li>Web, bot de WhatsApp con IA y panel de gestión en producción: Next.js, React y TypeScript sobre Firebase y Google Cloud.</li><li>Agente con Vercel AI SDK y tool calling sobre la API de WhatsApp Cloud, con proveedor de LLM intercambiable.</li></ul></li><li><div class="job-head"><h3>Tech Lead</h3><span class="job-when">abr. 2025 – ago. 2026</span></div><p class="job-org">We Are Cactus</p><ul><li>Liderazgo técnico del equipo: arquitectura, estimaciones, revisión de código y mentoring, en contacto directo con cliente.</li><li>Apps multiplataforma en Flutter y web en React, con backend en Firebase y Google Cloud.</li><li>Integración de IA generativa en producto y en el día a día del equipo.</li></ul></li><li><div class="job-head"><h3>Tech Lead Flutter</h3><span class="job-when">feb. 2023 – mar. 2025</span></div><p class="job-org">Cuatroochenta <span>Castellón</span></p><ul><li>Dirección del equipo Flutter: arquitectura, revisión de código, CI/CD y publicación en App Store y Google Play.</li></ul></li><li><div class="job-head"><h3>CTO</h3><span class="job-when">mar. 2021 – feb. 2023</span></div><p class="job-org">Darkan Technologies <span>Madrid</span></p><ul><li>Responsable de toda la tecnología de la startup: app en Flutter, backend en AWS y Firebase, y web.</li><li>Captación de usuarios con campañas en Google Ads y Meta Ads.</li></ul></li><li><div class="job-head"><h3>Senior Frontend Developer</h3><span class="job-when">abr. 2019 – mar. 2021</span></div><p class="job-org">Epigram <span>Valencia</span></p><ul><li>Apps en Flutter y desarrollo de plugins nativos para iOS.</li></ul></li><li><div class="job-head"><h3>Junior Frontend Developer</h3><span class="job-when">sept. 2017 – abr. 2019</span></div><p class="job-org">Mobilendo <span>Valencia</span></p><ul><li>Apps híbridas con Ionic, experiencias de realidad virtual en Unity y servicios en AWS.</li></ul></li></ol>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap two">
+      <div><h2>Stack</h2><dl class="stack"><div><dt>Móvil</dt><dd>Flutter, Dart, Android (Kotlin, Java), iOS (Swift), plugins nativos, App Store y Google Play</dd></div><div><dt>Web</dt><dd>React, Next.js, TypeScript, Angular, Node.js, HTML y CSS</dd></div><div><dt>Cloud</dt><dd>Google Cloud, Firebase (Firestore, Auth, Functions, App Hosting), AWS (Lambda, DynamoDB, Cognito, S3)</dd></div><div><dt>Lenguajes</dt><dd>Dart, TypeScript, Python, Kotlin, Swift, C# y SQL</dd></div><div><dt>Equipo</dt><dd>CI/CD, Git, arquitectura limpia, Scrum y revisión de código</dd></div></dl></div>
+      <div><h2>Formación</h2><ul class="edu"><li><b>Grado en Ingeniería Informática</b><span>Universitat Politècnica de València, 2012 – 2016</span></li><li><b>Máster en Desarrollo de Aplicaciones Multiplataforma</b><span>UPV, campus de Gandia, 2016 – 2017</span></li><li><b>Máster en Desarrollo de Aplicaciones Android</b><span>UPV, campus de Gandia, 2017 – 2018</span></li><li><b>Idiomas</b><span>Español nativo e inglés intermedio</span></li></ul></div>
+    </div>
+  </section>
+
+  <section class="block" id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <p class="intro">¿Tienes un proyecto, un equipo que liderar o una idea con IA? Cuéntamela.</p>
+      <a class="contact-mail" href="mailto:rodrigoballescaba@gmail.com">rodrigoballescaba@gmail.com</a>
+      <div class="contact-links">
+        <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/rodrigo-ballesteros-caba%C3%B1as-163853165/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/rodrigoballescaba" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost btn-sm" href="tel:+34695361678">Llamar +34 695 361 678</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Rodrigo Ballesteros Cabañas</span><span>Esta web no usa cookies ni analítica.</span></div>
+</footer>
+<script src="assets/site.js" defer></script>
 </body>
-
 </html>
