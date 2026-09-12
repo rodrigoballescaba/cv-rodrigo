@@ -129,7 +129,7 @@ CONTENT = {
                 "Apps multiplataforma en Flutter y web en React, con backend en Firebase y Google Cloud.",
                 "Integración de IA generativa en producto y en el día a día del equipo.",
             ]),
-            ("Tech Lead Flutter", "Cuatroochenta", "Castellón", "feb. 2023 – mar. 2025", False, [
+            ("Tech Lead Flutter", "Cuatroochenta", "Castellón", "feb. 2023 – abr. 2025", False, [
                 "Dirección del equipo Flutter: arquitectura, revisión de código, CI/CD y publicación en App Store y Google Play.",
             ]),
             ("CTO", "Darkan Technologies", "Madrid", "mar. 2021 – feb. 2023", False, [
@@ -237,7 +237,7 @@ CONTENT = {
                 "Cross-platform apps in Flutter and web in React, backed by Firebase and Google Cloud.",
                 "Brought generative AI into the product and into the team's daily workflow.",
             ]),
-            ("Flutter Tech Lead", "Cuatroochenta", "Castellón", "Feb 2023 – Mar 2025", False, [
+            ("Flutter Tech Lead", "Cuatroochenta", "Castellón", "Feb 2023 – Apr 2025", False, [
                 "Led the Flutter team: architecture, code review, CI/CD and releases to the App Store and Google Play.",
             ]),
             ("CTO", "Darkan Technologies", "Madrid", "Mar 2021 – Feb 2023", False, [
