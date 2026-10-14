@@ -86,64 +86,79 @@ CONTENT = {
         ],
         "projects_h": "Proyectos",
         "projects_intro": "Lo último que he construido, y algunas de las apps que he publicado en las tiendas.",
-        "feature_kicker": "Proyecto freelance, 2026",
-        "feature_title": "Renacia Clinic's",
-        "feature_text": "Web, asistente de WhatsApp con IA y panel de gestión para una clínica de micropigmentación capilar. "
-                        "Todo en producción y mantenido por mí.",
-        "feature_points": [
-            "El asistente responde por WhatsApp, consulta huecos y reserva la cita en Google Calendar.",
-            "El proveedor de IA se elige por configuración: Claude hoy, otro modelo mañana si sale más barato.",
-            "Panel para la clínica con fichas de clientes, retoques, gastos, objetivos y KPIs.",
-            "Web pública rápida, con blog y SEO, en Firebase Hosting.",
-        ],
-        "feature_link": "Ver la web",
-        "apps_h": "Apps publicadas",
-        "clients_label": "También he trabajado para",
-        "exp_h": "Experiencia",
-        "stack_h": "Stack",
-        "edu_h": "Formación",
-        "contact_h": "Contacto",
-        "contact_intro": "¿Tienes un proyecto, un equipo que liderar o una idea con IA? Cuéntamela.",
-        "call": "Llamar",
-        "footer": "Esta web no usa cookies ni analítica.",
-        "stack": [
-            ("Móvil", "Flutter, Dart, Android (Kotlin, Java), iOS (Swift), plugins nativos, App Store y Google Play"),
-            ("Web", "React, Next.js, TypeScript, Angular, Node.js, HTML y CSS"),
-            ("Cloud", "Google Cloud, Firebase (Firestore, Auth, Functions, App Hosting), AWS (Lambda, DynamoDB, Cognito, S3)"),
-            ("Lenguajes", "Dart, TypeScript, Python, Kotlin, Swift, C# y SQL"),
-            ("Equipo", "CI/CD, Git, arquitectura limpia, Scrum y revisión de código"),
-        ],
-        "edu": [
-            ("Grado en Ingeniería Informática", "Universitat Politècnica de València, 2012 – 2016"),
-            ("Máster en Desarrollo de Aplicaciones Multiplataforma", "UPV, campus de Gandia, 2016 – 2017"),
-            ("Máster en Desarrollo de Aplicaciones Android", "UPV, campus de Gandia, 2017 – 2018"),
-            ("Idiomas", "Español nativo e inglés intermedio"),
-        ],
-        "jobs": [
-            ("Desarrollador freelance, producto e IA", "Renacia Clinic's", "", "2026 – actualidad", True, [
-                "Web, bot de WhatsApp con IA y panel de gestión en producción: Next.js, React y TypeScript sobre Firebase y Google Cloud.",
-                "Agente con Vercel AI SDK y tool calling sobre la API de WhatsApp Cloud, con proveedor de LLM intercambiable.",
-            ]),
-            ("Tech Lead", "We Are Cactus", "", "abr. 2025 – ago. 2026", False, [
-                "Liderazgo técnico del equipo: arquitectura, estimaciones, revisión de código y mentoring, en contacto directo con cliente.",
-                "Apps multiplataforma en Flutter y web en React, con backend en Firebase y Google Cloud.",
-                "Integración de IA generativa en producto y en el día a día del equipo.",
-            ]),
-            ("Tech Lead Flutter", "Cuatroochenta", "Castellón", "feb. 2023 – abr. 2025", False, [
-                "Dirección del equipo Flutter: arquitectura, revisión de código, CI/CD y publicación en App Store y Google Play.",
-            ]),
-            ("CTO", "Darkan Technologies", "Madrid", "mar. 2021 – feb. 2023", False, [
-                "Responsable de toda la tecnología de la startup: app en Flutter, backend en AWS y Firebase, y web.",
-                "Captación de usuarios con campañas en Google Ads y Meta Ads.",
-            ]),
-            ("Senior Frontend Developer", "Epigram", "Valencia", "abr. 2019 – mar. 2021", False, [
-                "Apps en Flutter y desarrollo de plugins nativos para iOS.",
-            ]),
-            ("Junior Frontend Developer", "Mobilendo", "Valencia", "sept. 2017 – abr. 2019", False, [
-                "Apps híbridas con Ionic, experiencias de realidad virtual en Unity y servicios en AWS.",
-            ]),
-        ],
-    },
+        "features": [
+            {"kicker": "Proyecto freelance, 2026", "title": "Renacia Clinic's",
+             "text": "Web, asistente de WhatsApp con IA y panel de gestión para una clínica de micropigmentación capilar. Todo en producción y mantenido por mí.",
+             "tags": ["Next.js", "React", "TypeScript", "Firebase", "Google Cloud", "Vercel AI SDK", "Claude", "WhatsApp Cloud API"],
+             "url": "https://renaciaclinics.com", "link": "Ver la web",
+             "points": [
+                 "El asistente responde por WhatsApp, consulta huecos y reserva la cita en Google Calendar.",
+                 "El proveedor de IA se elige por configuración: Claude hoy, otro modelo mañana si sale más barato.",
+                 "Panel para la clínica con fichas de clientes, retoques, gastos, objetivos y KPIs.",
+                 "Web pública rápida, con blog y SEO, en Firebase Hosting."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Club Natación Utiel",
+             "text": "App móvil y panel web para un club de natación: inscripciones, cuotas y libro de movimientos con pagos online.",
+             "tags": ["Flutter", "Firebase", "Cloud Functions", "Stripe"],
+             "url": "https://cnu-utiel.web.app", "link": "Ver el panel",
+             "points": [
+                 "App y panel con autenticación, roles y datos en tiempo real sobre Firestore.",
+                 "Cobros con Stripe y libro de movimientos con importes exactos."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "La Capitana",
+             "text": "Juego de dados multijugador en tiempo real, con economía interna, tienda y mercado entre jugadores.",
+             "tags": ["Flutter", "Firebase", "Cloud Functions"],
+             "url": "https://la-capitana-c5b09.web.app", "link": "Ver el juego",
+             "points": [
+                 "Partidas multijugador con emparejamiento y validación de turnos en servidor.",
+                 "Economía con recompensas, tienda y mercado P2P con custodia."]},
+            {"kicker": "Proyecto propio, 2026", "title": "70casos.com — «Dale el trabajo a la IA»",
+             "text": "Web y libro sobre IA aplicada a negocios reales: 70 casos documentados, publicado en Amazon.",
+             "tags": ["Web", "Firebase", "SEO", "Amazon KDP"],
+             "url": "https://70casos.com", "link": "Ver la web",
+             "points": [
+                 "Web rápida con 70 casos, blog y analítica propia sin cookies.",
+                 "Libro publicado en Amazon (tapa blanda, tapa dura y Kindle)."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Núcleo · Pack inmobiliario con IA",
+             "text": "Plataforma que convierte tours virtuales Matterport en vídeos promocionales generados con IA para inmobiliarias.",
+             "tags": ["Python", "IA generativa", "Vídeo", "Firebase"],
+             "url": "https://nucleo-pack-demo.web.app", "link": "Ver la demo",
+             "points": [
+                 "Extracción de datos 3D de tours Matterport y generación de vídeo automatizada.",
+                 "Demos interactivas por vertical: inmobiliaria, clínica, taller y restauración."]},
+            {"kicker": "Proyecto freelance, 2025", "title": "Les Coves del Xuquer",
+             "text": "Web y sistema de asistencia para el alojamiento Les Coves del Xuquer.",
+             "tags": ["Web", "Firebase"],
+             "url": None, "link": "Ver la web",
+             "points": ["Web del alojamiento con reservas y atención al huésped."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Garzaran",
+             "text": "Web y app para el restaurante Garzaran: digitalización para hostelería local.",
+             "tags": ["TypeScript", "Firebase"],
+             "url": None, "link": "Ver la web",
+             "points": ["Carta digital, reservas y panel de gestión."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Karamelos",
+             "text": "Digitalización para Karamelos (hostelería).",
+             "tags": ["TypeScript", "Firebase"],
+             "url": None, "link": "Ver la web",
+             "points": ["Web y herramientas digitales para el negocio."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Canaima VIP",
+             "text": "Panel de gestión para el restaurante: caja diaria, turnos, cuadre y reparto por trabajador.",
+             "tags": ["TypeScript", "Firebase"],
+             "url": None, "link": "Ver el panel",
+             "points": ["Resumen del día, movimientos con filtros y cierre de turno con diferencias."]},
+            {"kicker": "Proyecto freelance, 2025", "title": "Doctor Shoes Phone",
+             "text": "Web y sistema digital para el negocio de reparaciones.",
+             "tags": ["JavaScript", "Firebase"],
+             "url": None, "link": "Ver la web",
+             "points": ["Digitalización de un taller de reparaciones local."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Ruta 66",
+             "text": "Web y digitalización para Ruta 66.",
+             "tags": ["Web", "Firebase"],
+             "url": None, "link": "Ver la web",
+             "points": ["Presencia digital y herramientas para el negocio."]},
+            {"kicker": "Proyecto freelance, 2026", "title": "Gruterval",
+             "text": "App del proyecto GRUT.",
+             "tags": ["Flutter", "Firebase"],
+             "url": None, "link": "Ver la app",
+             "points": ["App multiplataforma con backend en Firebase."]},
     "en": {
         "path": "en/",
         "title": "Rodrigo Ballesteros · Flutter & AI Tech Lead",
@@ -194,64 +209,79 @@ CONTENT = {
         ],
         "projects_h": "Projects",
         "projects_intro": "The latest thing I've built, and some of the apps I've shipped to the stores.",
-        "feature_kicker": "Freelance project, 2026",
-        "feature_title": "Renacia Clinic's",
-        "feature_text": "Website, AI WhatsApp assistant and management dashboard for a scalp micropigmentation clinic. "
-                        "All in production and maintained by me.",
-        "feature_points": [
-            "The assistant answers on WhatsApp, checks availability and books the appointment in Google Calendar.",
-            "The AI provider is picked by configuration: Claude today, another model tomorrow if it's cheaper.",
-            "Dashboard for the clinic with client records, touch-ups, expenses, goals and KPIs.",
-            "Fast public website with a blog and SEO, on Firebase Hosting.",
-        ],
-        "feature_link": "Visit the website",
-        "apps_h": "Published apps",
-        "clients_label": "I've also worked for",
-        "exp_h": "Experience",
-        "stack_h": "Stack",
-        "edu_h": "Education",
-        "contact_h": "Contact",
-        "contact_intro": "Got a project, a team to lead or an AI idea? Tell me about it.",
-        "call": "Call",
-        "footer": "This site uses no cookies or analytics.",
-        "stack": [
-            ("Mobile", "Flutter, Dart, Android (Kotlin, Java), iOS (Swift), native plugins, App Store and Google Play"),
-            ("Web", "React, Next.js, TypeScript, Angular, Node.js, HTML and CSS"),
-            ("Cloud", "Google Cloud, Firebase (Firestore, Auth, Functions, App Hosting), AWS (Lambda, DynamoDB, Cognito, S3)"),
-            ("Languages", "Dart, TypeScript, Python, Kotlin, Swift, C# and SQL"),
-            ("Team", "CI/CD, Git, clean architecture, Scrum and code review"),
-        ],
-        "edu": [
-            ("BSc in Computer Engineering", "Universitat Politècnica de València, 2012 – 2016"),
-            ("MSc in Multiplatform App Development", "UPV, Gandia campus, 2016 – 2017"),
-            ("MSc in Android App Development", "UPV, Gandia campus, 2017 – 2018"),
-            ("Languages", "Spanish (native) and English (intermediate)"),
-        ],
-        "jobs": [
-            ("Freelance developer, product and AI", "Renacia Clinic's", "", "2026 – present", True, [
-                "Website, AI WhatsApp bot and management dashboard in production: Next.js, React and TypeScript on Firebase and Google Cloud.",
-                "Agent built with the Vercel AI SDK and tool calling on the WhatsApp Cloud API, with a swappable LLM provider.",
-            ]),
-            ("Tech Lead", "We Are Cactus", "", "Apr 2025 – Aug 2026", False, [
-                "Technical lead for the team: architecture, estimates, code review and mentoring, working directly with clients.",
-                "Cross-platform apps in Flutter and web in React, backed by Firebase and Google Cloud.",
-                "Brought generative AI into the product and into the team's daily workflow.",
-            ]),
-            ("Flutter Tech Lead", "Cuatroochenta", "Castellón", "Feb 2023 – Apr 2025", False, [
-                "Led the Flutter team: architecture, code review, CI/CD and releases to the App Store and Google Play.",
-            ]),
-            ("CTO", "Darkan Technologies", "Madrid", "Mar 2021 – Feb 2023", False, [
-                "Owned all of the startup's technology: Flutter app, AWS and Firebase backend, and website.",
-                "User acquisition through Google Ads and Meta Ads campaigns.",
-            ]),
-            ("Senior Frontend Developer", "Epigram", "Valencia", "Apr 2019 – Mar 2021", False, [
-                "Flutter apps and native iOS plugin development.",
-            ]),
-            ("Junior Frontend Developer", "Mobilendo", "Valencia", "Sep 2017 – Apr 2019", False, [
-                "Hybrid apps with Ionic, virtual reality experiences in Unity and AWS services.",
-            ]),
-        ],
-    },
+        "features": [
+            {"kicker": "Freelance project, 2026", "title": "Renacia Clinic's",
+             "text": "Website, AI WhatsApp assistant and management dashboard for a scalp micropigmentation clinic. All in production and maintained by me.",
+             "tags": ["Next.js", "React", "TypeScript", "Firebase", "Google Cloud", "Vercel AI SDK", "Claude", "WhatsApp Cloud API"],
+             "url": "https://renaciaclinics.com", "link": "Visit the website",
+             "points": [
+                 "The assistant answers on WhatsApp, checks availability and books the appointment in Google Calendar.",
+                 "The AI provider is picked by configuration: Claude today, another model tomorrow if it's cheaper.",
+                 "Dashboard for the clinic with client records, touch-ups, expenses, goals and KPIs.",
+                 "Fast public website with a blog and SEO, on Firebase Hosting."]},
+            {"kicker": "Freelance project, 2026", "title": "Club Natación Utiel",
+             "text": "Mobile app and web dashboard for a swimming club: registrations, fees and a ledger with online payments.",
+             "tags": ["Flutter", "Firebase", "Cloud Functions", "Stripe"],
+             "url": "https://cnu-utiel.web.app", "link": "View the dashboard",
+             "points": [
+                 "App and dashboard with auth, roles and realtime data on Firestore.",
+                 "Stripe payments and a ledger with exact amounts."]},
+            {"kicker": "Freelance project, 2026", "title": "La Capitana",
+             "text": "Realtime multiplayer dice game, with an internal economy, shop and player market.",
+             "tags": ["Flutter", "Firebase", "Cloud Functions"],
+             "url": "https://la-capitana-c5b09.web.app", "link": "View the game",
+             "points": [
+                 "Multiplayer matches with matchmaking and server-side turn validation.",
+                 "Economy with rewards, a shop and a P2P market with escrow."]},
+            {"kicker": "Own project, 2026", "title": "70casos.com — AI at work",
+             "text": "Website and book on applied AI for real businesses: 70 documented cases, published on Amazon.",
+             "tags": ["Web", "Firebase", "SEO", "Amazon KDP"],
+             "url": "https://70casos.com", "link": "Visit the website",
+             "points": [
+                 "Fast website with 70 cases, a blog and cookie-free analytics.",
+                 "Book published on Amazon (paperback, hardcover and Kindle)."]},
+            {"kicker": "Freelance project, 2026", "title": "Núcleo · AI real-estate pack",
+             "text": "Platform that turns Matterport virtual tours into AI-generated promo videos for estate agents.",
+             "tags": ["Python", "Generative AI", "Video", "Firebase"],
+             "url": "https://nucleo-pack-demo.web.app", "link": "View the demo",
+             "points": [
+                 "3D data extraction from Matterport tours and automated video generation.",
+                 "Interactive demos per vertical: real estate, clinic, workshop and restaurants."]},
+            {"kicker": "Freelance project, 2025", "title": "Les Coves del Xuquer",
+             "text": "Website and assistance system for the Les Coves del Xuquer accommodation.",
+             "tags": ["Web", "Firebase"],
+             "url": None, "link": "Visit the website",
+             "points": ["Accommodation website with bookings and guest support."]},
+            {"kicker": "Freelance project, 2026", "title": "Garzaran",
+             "text": "Website and app for the Garzaran restaurant: digitalisation for local hospitality.",
+             "tags": ["TypeScript", "Firebase"],
+             "url": None, "link": "Visit the website",
+             "points": ["Digital menu, bookings and a management dashboard."]},
+            {"kicker": "Freelance project, 2026", "title": "Karamelos",
+             "text": "Digitalisation for Karamelos (hospitality).",
+             "tags": ["TypeScript", "Firebase"],
+             "url": None, "link": "Visit the website",
+             "points": ["Website and digital tools for the business."]},
+            {"kicker": "Freelance project, 2026", "title": "Canaima VIP",
+             "text": "Management dashboard for the restaurant: daily cash, shifts, balancing and payout per worker.",
+             "tags": ["TypeScript", "Firebase"],
+             "url": None, "link": "View the dashboard",
+             "points": ["Day summary, filtered movements and shift closing with differences."]},
+            {"kicker": "Freelance project, 2025", "title": "Doctor Shoes Phone",
+             "text": "Website and digital system for the repair shop.",
+             "tags": ["JavaScript", "Firebase"],
+             "url": None, "link": "Visit the website",
+             "points": ["Digitalisation of a local repair business."]},
+            {"kicker": "Freelance project, 2026", "title": "Ruta 66",
+             "text": "Website and digitalisation for Ruta 66.",
+             "tags": ["Web", "Firebase"],
+             "url": None, "link": "Visit the website",
+             "points": ["Digital presence and tools for the business."]},
+            {"kicker": "Freelance project, 2026", "title": "Gruterval",
+             "text": "App for the GRUT project.",
+             "tags": ["Flutter", "Firebase"],
+             "url": None, "link": "View the app",
+             "points": ["Cross-platform app with a Firebase backend."]},
 }
 
 # Ids de sección por idioma (anclas del menú)
@@ -282,9 +312,18 @@ def render(lang: str) -> str:
         lis = "".join(f"<li><b>{e(b)}</b><span>{e(s)}</span></li>" for b, s in items)
         ai_cols += f'<div class="ai-col{" primary" if primary else ""}"><h3>{e(title)}</h3><ul>{lis}</ul></div>'
 
-    points = "".join(f"<li>{e(x)}</li>" for x in c["feature_points"])
-    tags = "".join(f"<li>{t}</li>" for t in
-                   ["Next.js", "React", "TypeScript", "Firebase", "Google Cloud", "Vercel AI SDK", "Claude", "WhatsApp Cloud API"])
+    features_html = ""
+    for f in c["features"]:
+        f_tags = "".join(f"<li>{e(t)}</li>" for t in f["tags"])
+        f_points = "".join(f"<li>{e(x)}</li>" for x in f["points"])
+        f_link = (f'<a class="btn btn-ghost btn-sm" href="{f["url"]}" target="_blank" rel="noopener">{e(f["link"])}</a>'
+                  if f.get("url") else "")
+        features_html += (
+            '<article class="feature"><div>'
+            f'<p class="kicker">{e(f["kicker"])}</p><h3>{e(f["title"])}</h3><p>{e(f["text"])}</p>'
+            f'<ul class="tags">{f_tags}</ul>{f_link}'
+            f'</div><ul>{f_points}</ul></article>'
+        )
 
     apps = ""
     for name, img, ios, android in APPS:
@@ -400,16 +439,7 @@ def render(lang: str) -> str:
     <div class="wrap">
       <h2>{e(c["projects_h"])}</h2>
       <p class="intro">{e(c["projects_intro"])}</p>
-      <article class="feature">
-        <div>
-          <p class="kicker">{e(c["feature_kicker"])}</p>
-          <h3>{e(c["feature_title"])}</h3>
-          <p>{e(c["feature_text"])}</p>
-          <ul class="tags">{tags}</ul>
-          <a class="btn btn-ghost btn-sm" href="https://renacia-clinic-s.web.app" target="_blank" rel="noopener">{e(c["feature_link"])}</a>
-        </div>
-        <ul>{points}</ul>
-      </article>
+      {features_html}
       <h3 class="apps-title">{e(c["apps_h"])}</h3>
       <ul class="apps">{apps}</ul>
       <p class="clients"><b>{e(c["clients_label"])}:</b> {e(clients)}.</p>
